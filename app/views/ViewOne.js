@@ -14,7 +14,7 @@ class ViewOne extends Component {
     render() {
         return(
             <View style={styles.container}>
-                <Text>{this.props.navigation.state.params.test}</Text>
+                <Text>This is page 1.</Text>
                 <TouchableOpacity 
                     style={styles.button} 
                     onPress={this.goBack.bind(this)}

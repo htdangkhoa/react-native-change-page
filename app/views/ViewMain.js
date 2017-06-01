@@ -7,8 +7,8 @@ import {
 } from 'react-native';
 
 class ViewMain extends Component {
-    goToScreen(screen, param) {
-        (param) ? this.props.navigation.navigate(screen, { test: param }) : this.props.navigation.navigate(screen)
+    goToScreen(screen) {
+        this.props.navigation.navigate(screen)
     }
 
     render() {
@@ -16,7 +16,7 @@ class ViewMain extends Component {
             <View style={styles.container}>
                 <TouchableOpacity 
                     style={styles.button} 
-                    onPress={this.goToScreen.bind(this, 'one', 'hello')}
+                    onPress={this.goToScreen.bind(this, 'one')}
                 >
                     <Text>View 1</Text>
                 </TouchableOpacity>

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {
-    Router
+    Router,
+    Tabs,
+    Drawer
 } from './Router';
 
 class App extends Component {
     render() {
         return(
-            <Router/>
+            <Drawer />
         );
     }
 }
