@@ -1,0 +1,3 @@
+rootProject.name = 'react_native_change_page'
+
+include ':app'
